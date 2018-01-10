@@ -1,0 +1,136 @@
+body
+{
+  background-color: #F0F2F5;
+}
+
+.navtext:hover{
+    color:aquamarine;
+}
+
+.img1{
+  height: 200px;perspective:1000px;
+}
+.img2 {
+  height: 200px;
+  perspective:1000px;
+  transition: transform 1.0s ;
+  transform-style: preserve-3d;
+  position: relative;
+  cursor:pointer;
+}
+
+.img2 div {
+  width: 100%;
+  height: 200px;backface-visibility: hidden;
+  position: absolute;
+}
+.img2 .up {
+  background-color: #FFF;
+}
+.img2 .down {transform: rotateY( 180deg );
+}
+
+.img2:hover{
+  transform: rotateY( 180deg );
+}
+.img2 img {
+  width:100%;
+  height:100%;
+}
+
+.navmargin{
+   
+}
+
+
+.navbar-box {
+  background-color: #041528;
+}
+
+.navbar-box a {
+  color: #fff;
+}
+
+.logo{
+  width: 160px;
+  height: 32px;
+  display: block;
+  background-color: #364453;
+}
+
+.nav-item {
+  font-size: 20px;
+  padding: 18px 18px 26px;
+  width: auto;
+  height: 64px;
+}
+
+.nav-item:hover {
+  background-color: #4090F7;
+}
+
+.nav-link {
+  padding: 0;
+  line-height: 14px;
+  font-size: 20px;
+}
+
+.button-margin {
+  margin: 22px 16px 26px;
+  padding: 0;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  display: inline-block;
+}
+
+.burger-navbar {
+  background-color: #979797;
+  display: block;
+  width: 16px;
+  height: 3px;
+  margin: 0 auto 3px;
+}
+
+.burger-bottom {
+  margin: 0 auto 0;
+}
+
+.navbar-toggler span {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler span:nth-child(1) {
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
+}
+
+.navbar-toggler span:nth-child(2) {
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
+}
+
+.navbar-toggler span:nth-child(3) {
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
+}
+
+.navbar-toggler.open span:nth-child(1) {
+  -webkit-transform: translate(0, 6px) rotate(45deg);
+          transform: translate(0, 6px) rotate(45deg);
+}
+
+.navbar-toggler.open span:nth-child(2) {
+  width: 0;
+  opacity: 0%;
+}
+
+.navbar-toggler.open span:nth-child(3) {
+  -webkit-transform: translate(0, -6px) rotate(-45deg);
+          transform: translate(0, -6px) rotate(-45deg);
+}
